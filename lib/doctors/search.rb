@@ -2,7 +2,7 @@ module Doctors
   class Search
     include Id::Model
     include Id::Form
-    include Doctors::Validations
+    extend Doctors::Validations
 
     field :location
     field :offset,  default: 0
