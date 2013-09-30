@@ -1,0 +1,13 @@
+HTTP/1.0 200 OK
+Cache-Control: max-age=1
+Content-Type: application/json; charset=utf-8
+Expires: Thu, 26 Sep 2013 08:26:39 GMT
+X-Last-Modified: 9/26/2013
+Date: Thu, 26 Sep 2013 08:26:38 GMT
+Content-Length: 676
+X-Cache: MISS from localhost
+X-Cache-Lookup: MISS from localhost:3128
+Via: 1.0 localhost (squid/3.1.20)
+Connection: keep-alive
+
+{"data":{"id":12266,"code":null,"name":"Lloydspharmacy","organisationType":"PHA","organisationSubType":"COMPH","address":{"addressLine1":"Alfreton Primary Care Dev","addressLine2":"Church Street","addressLine3":"","addressLine4":"","city":"Alfreton","county":"","postCode":"DE55 7DW"},"latitude":53.097835540771484,"longitude":-1.3891339302062988,"distance":0.0,"telephoneNumber":"01773 836328","emailAddress":"","pimsUrl":"http://www.google.com","openingTimes":[],"numberOfPatients":12345,"acceptingNewPatients":true,"onlinePrescriptionOrdering":true,"services":[],"opensEarly":false,"opensWeekends":false,"opensLate":false,"gender":[]},"metadata":{"webTrends":"","logo":""}}

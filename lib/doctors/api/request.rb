@@ -4,6 +4,7 @@ module Doctors
 
       def initialize(url, params = {})
         @url = url
+        @params = params
       end
 
       def response
