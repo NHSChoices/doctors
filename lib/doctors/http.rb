@@ -1,0 +1,1 @@
+require 'doctors/http/resource'
