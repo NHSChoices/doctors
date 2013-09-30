@@ -2,7 +2,6 @@ module Doctors
   class Practice
     include Id::Model
     include Id::Form
-    extend  Http::Resource
 
     field :id
     field :code
@@ -24,8 +23,9 @@ module Doctors
     has_one  :address,  type: Address
     has_many :services, type: Service
 
-    resource  :find, FindById
-    resources :for_location, LocationSearch
+    def self.find(id)
+      new API.find(id)
+    end
 
     def to_param
       id
