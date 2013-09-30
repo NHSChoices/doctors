@@ -24,6 +24,9 @@ module Doctors
     has_one  :address,  type: Address
     has_many :services, type: Service
 
+    resource  :find, FindById
+    resources :for_location, LocationSearch
+
     def to_param
       id
     end
