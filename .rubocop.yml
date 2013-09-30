@@ -1,0 +1,26 @@
+AllCops:
+  Includes:
+    - Rakefile
+    - geo_api.rb
+  Excludes:
+    - data/**
+    - config/**
+    - features/**
+    - spec/**
+    - reports/**
+    - vendor/**
+StringLiterals:
+  Enabled: false
+Documentation:
+  Enabled: false
+Encoding:
+  Enabled: false
+ReduceArguments:
+  Enabled: false
+AndOr:
+  Enabled: false
+LineLength:
+  Enabled: true
+  Max: 80
+ModuleFunction:
+  Enabled: false
