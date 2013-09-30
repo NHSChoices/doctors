@@ -23,5 +23,11 @@ module Doctors
       expect(Practice.new(gender:[])).not_to have_male_gps
     end
 
+    describe ".find" do
+      it 'retrieves a specific practice by id' do
+        stub_request(:get, "http://nhs-api.cloudapp.net/api/Organisations/415").to_return(Fixtures.practice)
+        expect(Practice.find(415)).to be_a Practice
+      end
+    end
   end
 end
