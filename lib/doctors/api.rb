@@ -2,8 +2,8 @@ module Doctors
   module API
     extend self
 
-    def search(criteria)
-      Request.new(url, criteria).response.fetch('data')
+    def search(location, criteria)
+      Request.new("#{url}/#{location}", criteria).response.fetch('data')
     end
 
     def find(id)
