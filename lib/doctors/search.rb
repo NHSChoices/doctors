@@ -10,11 +10,16 @@ module Doctors
     validates_presence_of :location
 
     def results
-      @results ||= API.search(location, criteria).map(&Practice)
+      @results ||= API.search(criteria).map(&Practice)
     end
 
     def criteria
-      { organisationtype: 'GPB', offset: offset, limit: limit }
+      {
+        location: location,
+        organisationtype: 'GPB',
+        offset: offset,
+        limit: limit
+      }
     end
 
     def to_param

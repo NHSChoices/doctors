@@ -2,8 +2,8 @@ module Doctors
   module API
     extend self
 
-    def search(location, criteria)
-      Request.new("#{url}/#{location}", criteria).response.fetch('data')
+    def search(criteria)
+      Request.new(url, criteria).response.fetch('data')
     end
 
     def find(id)
@@ -13,7 +13,7 @@ module Doctors
     private
 
     def url
-      'http://nhs-api.cloudapp.net/api/Organisations'
+      'http://3d79c66e59f24dc0b493ac429ce1f575.cloudapp.net/api/organisations'
     end
 
   end

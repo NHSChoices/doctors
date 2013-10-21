@@ -25,7 +25,7 @@ module Doctors
 
     describe ".find" do
       it 'retrieves a specific practice by id' do
-        stub_request(:get, "http://nhs-api.cloudapp.net/api/Organisations/415").to_return(Fixtures.practice)
+        stub_request(:get, "http://3d79c66e59f24dc0b493ac429ce1f575.cloudapp.net/api/organisations/415").to_return(Fixtures.practice)
         expect(Practice.find(415)).to be_a Practice
       end
     end
