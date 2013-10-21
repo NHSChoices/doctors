@@ -1,14 +1,3 @@
-GIT
-  remote: git://github.com/rsslldnphy/id.git
-  revision: 253235cdd35ceae25e1c5c10716983302c8ca6d5
-  branch: 0.1
-  specs:
-    id (0.1)
-      activemodel
-      activesupport
-      money
-      optional
-
 PATH
   remote: .
   specs:
@@ -16,6 +5,15 @@ PATH
       faraday
       id
       yajl-ruby
+
+PATH
+  remote: ~/Code/id
+  specs:
+    id (0.1)
+      activemodel
+      activesupport
+      money
+      optional
 
 GEM
   remote: https://rubygems.org/
