@@ -1,20 +1,17 @@
 class OpeningTimes
   include Id::Model
 
-  field :day_of_week, key: 'dayOfWeek'
-  field :opening_time, key: 'openingTime'
-  field :closing_time, key: 'closingTime'
+  field :opens_early,            key: 'opensEarly'
+  field :opens_weekends,         key: 'opensWeekends'
+  field :opens_late,             key: 'opensLate'
 
-  def day
-    case day_of_week
-    when 1 then "Monday"
-    when 2 then "Tuesday"
-    when 3 then "Wednesday"
-    when 4 then "Thursday"
-    when 5 then "Friday"
-    when 6 then "Saturday"
-    when 0 then "Sunday"
-    end
+  has_many :periods, type: Period, key: 'times'
+
+  def reception
+    periods.select(&:reception?)
   end
 
+  def surgery
+    periods.select(&:surgery?)
+  end
 end
