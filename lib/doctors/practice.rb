@@ -15,13 +15,10 @@ module Doctors
     field :patient_count,          key: 'numberOfPatients'
     field :accepting_new_patients, key: 'acceptingNewPatients'
     field :online_prescriptions,   key: 'onlinePrescriptionOrdering'
-    field :pims_url,               key: 'pimsUrl'
-    field :opens_early,            key: 'opensEarly'
-    field :opens_weekends,         key: 'opensWeekends'
-    field :opens_late,             key: 'opensLate'
+    field :pims_url,               key: 'pimsProfileLink'
 
-    has_one  :address,  type: Address
-    has_many :services, type: Service
+    has_one  :address,       type: Address
+    has_many :services,      type: Service
     has_many :opening_times, type: OpeningTimes, key: 'openingTimes'
 
     def self.find(id)

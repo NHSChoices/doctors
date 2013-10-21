@@ -8,6 +8,7 @@ require 'doctors/api/error'
 require 'doctors/api'
 
 require 'doctors/address'
+require 'doctors/opening_times/period'
 require 'doctors/opening_times'
 require 'doctors/service'
 require 'doctors/practice'
