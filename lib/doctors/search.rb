@@ -22,6 +22,10 @@ module Doctors
       }
     end
 
+    def persisted?
+      true
+    end
+
     def to_param
       location
     end
