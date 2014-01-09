@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/rsslldnphy/id.git
-  revision: d0e8bcc8cce3622b181abf56cd0f2fbccc624176
-  branch: 0.1
+  revision: 0b9b1b3a7f7fe96a175942179142c4fb0ae2b942
   specs:
     id (0.1)
       activemodel
