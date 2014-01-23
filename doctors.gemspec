@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'http://github.com/nhschoices/doctors'
 
   s.add_dependency "id"
-  s.add_dependency "yajl-ruby"
+  s.add_dependency "nokogiri"
   s.add_dependency "faraday"
 
   s.add_development_dependency "rspec"

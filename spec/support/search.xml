@@ -1,0 +1,130 @@
+HTTP/1.1 200 OK
+Content-Length: 17136
+Content-Type: application/xml
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+Cache-Control: private, max-age=83149
+Date: Thu, 23 Jan 2014 11:15:22 GMT
+Connection: keep-alive
+
+﻿<?xml version="1.0" encoding="utf-8"?><feed xmlns:s="http://syndication.nhschoices.nhs.uk/services" xmlns="http://www.w3.org/2005/Atom"><title type="text">NHS Choices - GP Practices Near Postcode - LS1 - Within 50km</title><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/postcode/ls1?range=50</id><rights type="text">© Crown Copyright 2009</rights><updated>2014-01-23T10:22:17Z</updated><category term="Search" /><logo>http://www.nhs.uk/nhscwebservices/documents/logo1.jpg</logo><author><name>NHS Choices</name><uri>http://www.nhs.uk</uri><email>webservices@nhschoices.nhs.uk</email></author><link rel="self" type="application/xml" title="NHS Choices - GP Practices Near Postcode - LS1 - Within 50km" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/postcode/LS1?apikey=XXXX&amp;range=50" /><link rel="first" type="application/xml" title="first" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/postcode/LS1?apikey=XXXX&amp;range=50&amp;page=1" /><link rel="next" type="application/xml" title="next" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/postcode/LS1?apikey=XXXX&amp;range=50&amp;page=2" /><link rel="last" type="application/xml" title="last" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/postcode/LS1?apikey=XXXX&amp;range=50&amp;page=10" /><tracking xmlns="http://syndication.nhschoices.nhs.uk/services">&lt;img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/organisations%2fgppractices%2fpostcode%2fLS1&amp;amp;wt.js=no&amp;amp;wt.cg_n=syndication"/&gt;</tracking><s:SearchCoords>53.7988,-1.55208</s:SearchCoords><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44531</id><title type="text">One Medicare @ The Light</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="One Medicare @ The Light" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44531?apikey=XXXX" /><link rel="alternate" title="One Medicare @ The Light" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=40677" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>One Medicare @ The Light</s:name>
+                                  <s:odsCode>Y02002</s:odsCode>
+                                  <s:address><s:addressLine>Balcony Level 7</s:addressLine><s:addressLine>The Light</s:addressLine><s:addressLine>The Headrow</s:addressLine><s:addressLine>Leeds</s:addressLine><s:postcode>LS1 8TL</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>0113 242 7425</s:telephone></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.54599356651306</s:longitude>
+                                    <s:latitude>53.7996482849121</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>0.411484171778932</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4351</id><title type="text">Dr Greenway J &amp; Partners</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="Dr Greenway J &amp; Partners" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4351?apikey=XXXX" /><link rel="alternate" title="Dr Greenway J &amp; Partners" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=39297" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>Dr Greenway J &amp; Partners</s:name>
+                                  <s:odsCode>B86110</s:odsCode>
+                                  <s:address><s:addressLine>Leeds Student Medical Practice</s:addressLine><s:addressLine>4 Blenheim Court</s:addressLine><s:addressLine>Blenheim Walk</s:addressLine><s:addressLine>Leeds</s:addressLine><s:postcode>LS2 9AE</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>0113 2954488</s:telephone></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.55046164989471</s:longitude>
+                                    <s:latitude>53.8077545166016</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>1.0105736262206</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4261</id><title type="text">Dr Ottman &amp; Partners</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="Dr Ottman &amp; Partners" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4261?apikey=XXXX" /><link rel="alternate" title="Dr Ottman &amp; Partners" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=39571" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>Dr Ottman &amp; Partners</s:name>
+                                  <s:odsCode>B86019</s:odsCode>
+                                  <s:address><s:addressLine>Rutland Lodge Medical Practice</s:addressLine><s:addressLine>27 Carlton Gardens</s:addressLine><s:addressLine>Leeds</s:addressLine><s:postcode>LS7 1JL</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>0113 2007474</s:telephone></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.54136061668396</s:longitude>
+                                    <s:latitude>53.8068199157715</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>1.13888984445524</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4268</id><title type="text">Dr O'shea T S &amp; Partners</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="Dr O'shea T S &amp; Partners" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4268?apikey=XXXX" /><link rel="alternate" title="Dr O'shea T S &amp; Partners" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=42056" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>Dr O'shea T S &amp; Partners</s:name>
+                                  <s:odsCode>B86025</s:odsCode>
+                                  <s:address><s:addressLine>Hyde Park Surgery</s:addressLine><s:addressLine>Woodsley Road</s:addressLine><s:addressLine>Leeds</s:addressLine><s:postcode>LS6 1SG</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>08443 756070 or 0113 8879551</s:telephone><s:email>hydeparksurgery@nhs.net</s:email></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.56870198249817</s:longitude>
+                                    <s:latitude>53.806022644043</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>1.35906940203388</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4298</id><title type="text">Woodhouse Health Centre</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="Woodhouse Health Centre" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4298?apikey=XXXX" /><link rel="alternate" title="Woodhouse Health Centre" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=39030" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>Woodhouse Health Centre</s:name>
+                                  <s:odsCode>B86049</s:odsCode>
+                                  <s:address><s:addressLine>Dr Kinghorn &amp; Partners</s:addressLine><s:addressLine>Woodhouse Health Centre</s:addressLine><s:addressLine>Cambridge Road</s:addressLine><s:addressLine>Leeds</s:addressLine><s:addressLine>West Yorkshire</s:addressLine><s:postcode>LS6 2SF</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>0113 2953510</s:telephone></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.54889500141144</s:longitude>
+                                    <s:latitude>53.8122406005859</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>1.50925001842327</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4267</id><title type="text">Dr Burkill A D &amp; Partners</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="Dr Burkill A D &amp; Partners" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4267?apikey=XXXX" /><link rel="alternate" title="Dr Burkill A D &amp; Partners" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=37636" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>Dr Burkill A D &amp; Partners</s:name>
+                                  <s:odsCode>B86024</s:odsCode>
+                                  <s:address><s:addressLine>Priory View Medical Centre</s:addressLine><s:addressLine>2a Green Lane</s:addressLine><s:addressLine>Leeds</s:addressLine><s:postcode>LS12 1HU</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>0113 2954260</s:telephone></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.57492101192474</s:longitude>
+                                    <s:latitude>53.7916641235352</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>1.69867281749291</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4340</id><title type="text">Dr Bhandary L V &amp; Partners</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="Dr Bhandary L V &amp; Partners" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4340?apikey=XXXX" /><link rel="alternate" title="Dr Bhandary L V &amp; Partners" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38258" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>Dr Bhandary L V &amp; Partners</s:name>
+                                  <s:odsCode>B86095</s:odsCode>
+                                  <s:address><s:addressLine>20a Shafton Lane</s:addressLine><s:addressLine>Holbeck</s:addressLine><s:addressLine>Leeds</s:addressLine><s:addressLine>West Yorkshire</s:addressLine><s:postcode>LS11 9RE</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>01132056561</s:telephone></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.56436085700989</s:longitude>
+                                    <s:latitude>53.7853355407715</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>1.70392322890162</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4258</id><title type="text">Craven Road Medical Centre</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="Craven Road Medical Centre" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4258?apikey=XXXX" /><link rel="alternate" title="Craven Road Medical Centre" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=42956" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>Craven Road Medical Centre</s:name>
+                                  <s:odsCode>B86017</s:odsCode>
+                                  <s:address><s:addressLine>60 Craven Road</s:addressLine><s:addressLine>Leeds</s:addressLine><s:postcode>LS6 2RX</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>0113 2953530</s:telephone></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.54735696315765</s:longitude>
+                                    <s:latitude>53.8140335083008</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>1.72325650235986</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44585</id><title type="text">Shakespeare Medical Practice</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="Shakespeare Medical Practice" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44585?apikey=XXXX" /><link rel="alternate" title="Shakespeare Medical Practice" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38018" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>Shakespeare Medical Practice</s:name>
+                                  <s:odsCode>Y02494</s:odsCode>
+                                  <s:address><s:addressLine>Shakespeare Medical Practice</s:addressLine><s:addressLine>Burmantofts Health Centre</s:addressLine><s:addressLine>Cromwell Mount</s:addressLine><s:addressLine>Leeds</s:addressLine><s:postcode>LS9 7TA</s:postcode></s:address>
+                                  <s:contact type="General"></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.52623689174652</s:longitude>
+                                    <s:latitude>53.8013687133789</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>1.72728088146676</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4372</id><title type="text">The Practice Lincoln Green</title><updated>2014-01-23T10:22:17Z</updated><link rel="self" title="The Practice Lincoln Green" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4372?apikey=XXXX" /><link rel="alternate" title="The Practice Lincoln Green" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=43871" /><content type="application/xml">
+                                <s:organisationSummary>    
+                                  <s:name>The Practice Lincoln Green</s:name>
+                                  <s:odsCode>B86675</s:odsCode>
+                                  <s:address><s:addressLine>Burmantofts Health Centre</s:addressLine><s:addressLine>Cromwell Mount</s:addressLine><s:addressLine>Leeds</s:addressLine><s:addressLine>West Yorkshire</s:addressLine><s:postcode>LS9 7TA</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>0113 2211900</s:telephone></s:contact>
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.52623689174652</s:longitude>
+                                    <s:latitude>53.8013687133789</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:Distance>1.72728088146676</s:Distance>
+                                </s:organisationSummary>
+                                </content></entry></feed>

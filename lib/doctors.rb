@@ -1,15 +1,8 @@
-require 'id'
-
-require 'yajl'
 require 'faraday'
-
-require 'doctors/api/request'
-require 'doctors/api/error'
-require 'doctors/api'
-
+require 'id'
+require 'active_support/core_ext/hash/conversions'
 require 'doctors/address'
-require 'doctors/opening_times/period'
-require 'doctors/opening_times'
-require 'doctors/service'
+require 'doctors/coordinate'
 require 'doctors/practice'
 require 'doctors/search'
+require 'doctors/search/xml_parser'
