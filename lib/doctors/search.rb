@@ -1,37 +1,43 @@
 module Doctors
   class Search
     include Id::Model
-    include Id::Form
 
-    field :location
-    field :offset,  default: 0
-    field :limit,   default: 10
-
-    validates_presence_of :location
+    field :postcode
+    field :page, default: 1
 
     def results
-      @results ||= API.search(criteria).map(&Practice)
+      Doctors::Search::XMLParser.new(response).parse
     end
 
-    def criteria
-      {
-        location: location,
-        organisationtype: 'GPB',
-        offset: offset,
-        limit: limit
-      }
+    private
+
+    def response
+      request.env[:body]
     end
 
-    def to_param
-      location
+    def request
+      Faraday.get(url, params)
     end
 
-    def self.model_name
-      ActiveModel::Name.new(self, nil, "Search")
+    def api_key
+      ENV.fetch('API_KEY')
     end
 
-    def to_partial_path
-      'search'
+    def params
+      { apikey: api_key, range: 50, page: page }
     end
+
+    def url
+      "http://#{domain}/#{action}/#{postcode}.xml"
+    end
+
+    def domain
+      'v1.syndication.nhschoices.nhs.uk'
+    end
+
+    def action
+      'organisations/gppractices/postcode'
+    end
+
   end
 end

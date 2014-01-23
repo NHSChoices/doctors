@@ -1,0 +1,173 @@
+HTTP/1.1 200 OK
+Content-Length: 6634
+Content-Type: application/xml; q=0.5
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+Cache-Control: private, max-age=86400
+Date: Thu, 23 Jan 2014 11:26:32 GMT
+Connection: keep-alive
+
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Organisation xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/NHSChoices.Syndication.Resources.Orgs">
+  <Link xmlns="http://schemas.datacontract.org/2004/07/NHSChoices.Syndication.Resources">
+    <Text>City View Medical Practice</Text>
+    <Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234?apikey=XXXX</Uri>
+  </Link>
+  <Address>
+    <Line1>Beeston Hill Community Health Centre</Line1>
+    <Line2>123 Cemetery Road</Line2>
+    <Line3>Leeds</Line3>
+    <Line4>West Yorkshire</Line4>
+    <Line5></Line5>
+    <Postcode>LS11 8LH</Postcode>
+  </Address>
+  <CommentUrl>http://www.nhs.uk/Services/GP/ReviewsAndRatings/DefaultView.aspx?id=37899</CommentUrl>
+  <CqcNumber
+    i:nil="true" />
+  <Easting>0</Easting>
+  <EmailAddress>victoria.keys@nhs.net</EmailAddress>
+  <Fax>0113 2703727</Fax>
+  <FiveStarRecommendationRating>
+    <Value>2.75</Value>
+    <MaxValue>5</MaxValue>
+    <MinValue>1</MinValue>
+    <NumberOfRatings>4</NumberOfRatings>
+  </FiveStarRecommendationRating>
+  <Latitude>53.778114318847656</Latitude>
+  <Longitude>-1.5568481683731079</Longitude>
+  <ModifiedDate>2013-12-24T03:31:14.42</ModifiedDate>
+  <Name>City View Medical Practice</Name>
+  <Northing>0</Northing>
+  <OdsCode>B86002</OdsCode>
+  <OrganisationId>4234</OrganisationId>
+  <OrganisationTypeId
+    i:nil="true" />
+  <OrganisationTypeName>gppractices</OrganisationTypeName>
+  <OverallRating>
+    <PercentWouldRecommend>50</PercentWouldRecommend>
+    <Ratings>4</Ratings>
+    <Recommendations>2</Recommendations>
+  </OverallRating>
+  <ParentOrganisationCode
+    i:nil="true" />
+  <ParentOrganisationName
+    i:nil="true" />
+  <PimsOrganisationTypeId>0</PimsOrganisationTypeId>
+  <ProfileLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/NHSChoices.Syndication.Resources">
+    <d2p1:Link>
+      <d2p1:Class>profile</d2p1:Class>
+      <d2p1:Text>Overview</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/overview?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>profile</d2p1:Class>
+      <d2p1:Text>Services</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/services?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>profile</d2p1:Class>
+      <d2p1:Text>Staff</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/staff?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>profile</d2p1:Class>
+      <d2p1:Text>Facilities</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/facilities?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>profile</d2p1:Class>
+      <d2p1:Text>Core Indicators</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/indicators/core?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>profile</d2p1:Class>
+      <d2p1:Text>Treatment Indicators</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/indicators/treatment?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>profile</d2p1:Class>
+      <d2p1:Text>Faq</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/faq?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>profile</d2p1:Class>
+      <d2p1:Text>Performance</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/performance?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>profile</d2p1:Class>
+      <d2p1:Text>Contact</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/contact?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>comments</d2p1:Class>
+      <d2p1:Text>Comments Before</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/commentsbefore?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>comments</d2p1:Class>
+      <d2p1:Text>Comments Since</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/commentssince?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+    <d2p1:Link>
+      <d2p1:Class>comments</d2p1:Class>
+      <d2p1:Text>All Comments</d2p1:Text>
+      <d2p1:Uri>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/comments?apikey=XXXX</d2p1:Uri>
+    </d2p1:Link>
+  </ProfileLinks>
+  <Ratings>
+    <rating>
+      <questionText>Are you able to get through to the surgery by telephone?</questionText>
+      <answerText>Sometimes</answerText>
+      <answerMetric
+        value="3.1"
+        type="Average"
+        minValue="1"
+        maxValue="5"
+        numberOfRatings="10" />
+    </rating>
+    <rating>
+      <questionText>Are you able to get an appointment when you want one?</questionText>
+      <answerText>Sometimes</answerText>
+      <answerMetric
+        value="3.22222222222222"
+        type="Average"
+        minValue="1"
+        maxValue="5"
+        numberOfRatings="9" />
+    </rating>
+    <rating>
+      <questionText>Do the staff treat you with dignity and respect?</questionText>
+      <answerText>Rarely</answerText>
+      <answerMetric
+        value="1.66666666666667"
+        type="Average"
+        minValue="1"
+        maxValue="5"
+        numberOfRatings="9" />
+    </rating>
+    <rating>
+      <questionText>Does the surgery involve you in decisions about your care and treatment?</questionText>
+      <answerText>Rarely</answerText>
+      <answerMetric
+        value="2.33333333333333"
+        type="Average"
+        minValue="1"
+        maxValue="5"
+        numberOfRatings="9" />
+    </rating>
+    <rating>
+      <questionText>This GP practice provides accurate and up to date information on services and opening hours</questionText>
+      <answerText>Rarely</answerText>
+      <answerMetric
+        value="2.25"
+        type="Average"
+        minValue="1"
+        maxValue="5"
+        numberOfRatings="4" />
+    </rating>
+  </Ratings>
+  <Telephone>0113 2760717</Telephone>
+  <UnModifiedOdsCode>B86002</UnModifiedOdsCode>
+  <WebAddress>http://www.cityviewmedicalpractice.co.uk</WebAddress>
+</Organisation>

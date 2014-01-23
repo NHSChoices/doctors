@@ -3,17 +3,26 @@ require 'spec_helper'
 module Doctors
   describe Search do
 
-    let (:search) { Search.new(location: 'NR1') }
-
-    it 'performs a practice search' do
-      stub_request(:get, "http://3d79c66e59f24dc0b493ac429ce1f575.cloudapp.net/api/organisations?limit=10&location=NR1&offset=0&organisationtype=GPB").to_return(Fixtures.practices)
-      expect(search.results).to have_at_least(1).item
-      search.results.each { |result| expect(result).to be_a Practice }
+    before do
+      stub_request(:get, "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/postcode/LS1.xml?apikey=XXXX&page=1&range=50").
+        to_return(File.read('spec/support/search.xml'))
     end
 
-    it 'raises an API::Error on a non-200 response' do
-      stub_request(:get, "http://3d79c66e59f24dc0b493ac429ce1f575.cloudapp.net/api/organisations?limit=10&location=NR1&offset=0&organisationtype=GPB").to_return(Fixtures.not_found)
-      expect { search.results }.to raise_error API::Error
+    let (:search) { Search.new(postcode: 'LS1') }
+
+    it 'retrieves a set of 10 results' do
+      expect(search.results).to have(10).items
+    end
+
+    it 'parses the returned xml into Practice objects' do
+      result = search.results.first
+      expect(result).to be_a Practice
+      expect(result.id).to eq '44531'
+      expect(result.name).to eq 'One Medicare @ The Light'
+      expect(result.ods_code).to eq 'Y02002'
+      expect(result.address).to be_an Address
+      expect(result.phone).to eq '0113 242 7425'
+      expect(result.coordinate).to be_a Coordinate
     end
 
   end
