@@ -12,7 +12,7 @@ module Doctors
           summary  = entry['content']['organisationSummary']
           contact  = summary['contact'] || {}
           phone    = contact['telephone'] || 'Not known'
-          Practice.new(summary.merge(id: id, phone: phone))
+          PracticeSummary.new(summary.merge(id: id, phone: phone))
         end
       end
 
