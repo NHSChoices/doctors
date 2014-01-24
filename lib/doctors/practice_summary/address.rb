@@ -5,6 +5,11 @@ module Doctors
 
       field :lines, key: 'addressLine'
       field :postcode
+
+      def formatted
+        lines.join(', ')
+      end
+
     end
   end
 end

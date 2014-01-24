@@ -1,12 +1,25 @@
 module Doctors
   class Search
     include Id::Model
+    include Id::Form
 
     field :postcode
     field :page, default: 1
 
     def results
       Doctors::Search::XMLParser.new(response).parse
+    end
+
+    def to_param
+      postcode
+    end
+
+    def self.model_name
+      ActiveModel::Name.new(self, nil, "Search")
+    end
+
+    def to_partial_path
+      'search'
     end
 
     private

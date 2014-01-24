@@ -12,7 +12,11 @@ module Doctors
       private
 
       def overview
-        data['feed']['entry']['content']['overview']
+        data['feed']['entry']['content']['overview'].merge(pims_url: pims_url)
+      end
+
+      def pims_url
+        Nokogiri::XML(xml).xpath('//link[@rel="alternative"]/@href').first
       end
 
       def data
