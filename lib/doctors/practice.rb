@@ -20,5 +20,11 @@ module Doctors
       API.new(id).response
     end
 
+    def opening_times
+      PracticeOverview.find(id).opening_times
+    rescue
+      "No data available" # This makes me :-( but given syndication...
+    end
+
   end
 end
