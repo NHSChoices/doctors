@@ -2,15 +2,23 @@ module Doctors
   class Practice
     include Id::Model
 
-    field :id
-    field :name
-    field :phone
-    field :ods_code, key: 'odsCode'
+    field :id,        key: 'OrganisationId'
+    field :name,      key: 'Name'
+    field :ods_code,  key: 'OdsCode'
+    field :email,     key: 'EmailAddress'
+    field :latitude,  key: 'Latitude'
+    field :longitude, key: 'Longitude'
+    field :phone, key: 'Telephone'
 
-    has_one :address
-    has_one :coordinate, key: 'geographicCoordinates'
+    has_one :address, key: 'Address'
 
-    def self.find
+    def coordinate
+      @coordinate ||= Coordinate.new(longitude: longitude, latitude: latitude)
     end
+
+    def self.find(id)
+      API.new(id).response
+    end
+
   end
 end
