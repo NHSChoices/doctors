@@ -10,11 +10,11 @@ module Doctors
         field :period, key: 'timesSession'
 
         def from
-          period['fromTime']
+          period == 'Closed' ? period : period['fromTime']
         end
 
         def to
-          period['toTime']
+          period == 'Closed' ? '-' : period['fromTime']
         end
       end
 
