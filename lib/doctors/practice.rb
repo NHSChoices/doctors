@@ -40,7 +40,7 @@ module Doctors
     end
 
     def opening_times
-      overview.find(id).opening_times
+      overview.opening_times
     rescue
       PracticeOverview::OpeningTimes.new
     end

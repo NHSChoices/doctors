@@ -6,6 +6,8 @@ module Doctors
     before do
       stub_request(:get, "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234.xml?apikey=XXXX").
         to_return(File.read('spec/support/practice.xml'))
+      stub_request(:get, "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4234/overview.xml?apikey=XXXX").
+        to_return(File.read('spec/support/overview.xml'))
     end
 
     describe '.find' do
@@ -18,6 +20,13 @@ module Doctors
         expect(practice.coordinate).to eq Coordinate.new(longitude: "-1.5568481683731079", latitude: "53.778114318847656")
         expect(practice.phone).to eq '0113 2760717'
         expect(practice.address).to be_a Practice::Address
+      end
+    end
+
+    describe '#opening_times' do
+      it 'retrieves the practice overview and returns the opening times from it' do
+        practice = Practice.find(4234)
+        expect(practice.opening_times.surgery.first).to be_a PracticeOverview::OpeningTimes::Session
       end
     end
   end
