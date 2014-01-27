@@ -30,6 +30,10 @@ module Doctors
       it 'has surgery times' do
         expect(opening_times.surgery.first).to be_an PracticeOverview::OpeningTimes::Session
       end
+
+      it 'has from and to times for each day' do
+        expect(opening_times.surgery.first.days.first.time_period.from).to eq 'Closed'
+      end
     end
 
   end
