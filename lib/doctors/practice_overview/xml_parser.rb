@@ -16,7 +16,7 @@ module Doctors
       end
 
       def pims_url
-        Nokogiri::XML(xml).xpath('//link[@rel="alternative"]/@href').first
+        Nokogiri::XML(xml).css("link[rel='alternate']").first.attr('href')
       end
 
       def data

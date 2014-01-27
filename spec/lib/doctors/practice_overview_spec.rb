@@ -17,6 +17,12 @@ module Doctors
       end
     end
 
+    describe '#pims_url' do
+      it 'has a link to the practice page on the main Choices site' do
+        expect(overview.pims_url).to eq 'http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=37899'
+      end
+    end
+
     describe '#opening_times' do
       it 'has reception times' do
         expect(opening_times.reception.first).to be_an PracticeOverview::OpeningTimes::Session
