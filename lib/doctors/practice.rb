@@ -6,12 +6,20 @@ module Doctors
     field :id,        key: 'OrganisationId'
     field :name,      key: 'Name'
     field :ods_code,  key: 'OdsCode'
-    field :email,     key: 'EmailAddress'
+    field :email_f,   key: 'EmailAddress'
     field :latitude,  key: 'Latitude'
     field :longitude, key: 'Longitude'
-    field :phone,     key: 'Telephone'
+    field :phone_f,   key: 'Telephone'
 
     has_one :address, key: 'Address'
+
+    def email
+      email_f unless email_f == { "i:nil" => "true" }# ? "Unknown" : email_f
+    end
+
+    def phone
+      phone_f == { "i:nil" => "true" } ? "Unknown" : phone_f
+    end
 
     def coordinate
       @coordinate ||= Coordinate.new(longitude: longitude, latitude: latitude)
@@ -34,7 +42,7 @@ module Doctors
     def opening_times
       overview.find(id).opening_times
     rescue
-      "No data available" # This makes me :-( but given syndication...
+      PracticeOverview::OpeningTimes.new
     end
 
     def self.model_name

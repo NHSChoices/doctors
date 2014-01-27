@@ -12,8 +12,16 @@ module Doctors
 
       field :postcode, key: 'Postcode'
 
+      # i:nil => true? oh god oh god the hideousness
       def lines
-        [line_1, line_2, line_3, line_4, line_5].flatten.reject(&:blank?)
+        [
+          line_1,
+          line_2,
+          line_3,
+          line_4,
+          line_5,
+          postcode
+        ].flatten.reject { |line| line.blank? || line == {"i:nil" => "true"} }
       end
 
       def formatted

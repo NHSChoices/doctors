@@ -7,7 +7,7 @@ module Doctors
       field :postcode
 
       def formatted
-        lines.join(', ')
+        (lines + [postcode]).join(', ')
       end
 
     end

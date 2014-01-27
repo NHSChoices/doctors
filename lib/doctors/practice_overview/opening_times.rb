@@ -37,10 +37,10 @@ module Doctors
 
     class OpeningTimes
       include Id::Model
-      field :session_data, key: 'timesSessionTypes'
+      field :session_data, key: 'timesSessionTypes', default: Hash.new
 
       def sessions
-        @sessions ||= session_data['timesSessionType'].map(&Session)
+        @sessions ||= session_data.fetch('timesSessionType', []).map(&Session)
       end
 
       def session_map
@@ -56,5 +56,6 @@ module Doctors
       end
 
     end
+
   end
 end
