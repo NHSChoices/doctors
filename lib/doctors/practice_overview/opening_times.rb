@@ -18,7 +18,7 @@ module Doctors
         end
       end
 
-      class Days
+      class Day
         include Id::Model
         field :name, key: 'dayName'
         has_one :time_period, key: 'timesSessions'
