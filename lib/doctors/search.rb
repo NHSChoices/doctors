@@ -6,6 +6,8 @@ module Doctors
     field :postcode
     field :page, default: 1
 
+    validates_presence_of :postcode
+
     def results
       Doctors::Search::XMLParser.new(response).parse
     end
