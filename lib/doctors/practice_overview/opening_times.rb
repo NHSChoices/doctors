@@ -9,13 +9,15 @@ module Doctors
         include Id::Model
         field :period, key: 'timesSession'
 
-        def from
-          period == 'Closed' ? period : period['fromTime']
+        # I am sorry, father, for I have sinned
+        def to_s(period=period)
+          case period
+          when String then period
+          when Hash then "#{period['fromTime']} - #{period['toTime']}"
+          when Array then period.map { |p| to_s p }.join(', ')
+          end
         end
 
-        def to
-          period == 'Closed' ? '-' : period['fromTime']
-        end
       end
 
       class Day
