@@ -4,7 +4,7 @@ module Doctors
     include Id::Form
 
     field :postcode
-    field :page, default: 1
+    field :page, default: 1, type: Integer
 
     validates_presence_of :postcode
 
@@ -43,7 +43,9 @@ module Doctors
     end
 
     def url
-      "http://#{domain}/#{action}/#{postcode}.xml"
+      "http://#{domain}/#{action}/#{postcode}.xml".tap do |url|
+        Rails.logger.info "URL is #{url}"
+      end
     end
 
     def domain
