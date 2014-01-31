@@ -13,7 +13,7 @@ module Doctors
     end
 
     def to_param
-      postcode
+      postcode.gsub(' ', '')
     end
 
     def self.model_name
@@ -43,9 +43,7 @@ module Doctors
     end
 
     def url
-      "http://#{domain}/#{action}/#{postcode}.xml".tap do |url|
-        Rails.logger.info "URL is #{url}"
-      end
+      "http://#{domain}/#{action}/#{postcode.gsub(' ', '')}.xml"
     end
 
     def domain

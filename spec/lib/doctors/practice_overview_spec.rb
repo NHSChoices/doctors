@@ -32,8 +32,7 @@ module Doctors
       end
 
       it 'has from and to times for each day' do
-        expect(opening_times.surgery.first.days[1].time_period.from).to eq '08:00'
-        expect(opening_times.surgery.first.days[1].time_period.to).to eq '19:30'
+        expect(opening_times.surgery.first.days[1].time_period.to_s).to eq '08:00 - 19:30'
       end
     end
 
