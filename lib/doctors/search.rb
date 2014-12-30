@@ -35,7 +35,7 @@ module Doctors
     end
 
     def api_key
-      ENV.fetch('API_KEY')
+      ENV.fetch('SYNDICATION_API_KEY')
     end
 
     def params

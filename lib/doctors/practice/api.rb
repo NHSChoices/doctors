@@ -31,7 +31,7 @@ module Doctors
       end
 
       def api_key
-        ENV['API_KEY']
+        ENV['SYNDICATION_API_KEY']
       end
 
     end

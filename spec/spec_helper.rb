@@ -6,7 +6,7 @@ SimpleCov.start do
   add_filter 'spec'
 end
 
-ENV['API_KEY'] = 'XXXX'
+ENV['SYNDICATION_API_KEY'] = 'XXXX'
 
 require 'doctors'
 
